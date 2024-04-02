@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja To Do List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>Ninja ToDo List</h1>
+        </div>
+
+        <div class="task-form">
+            <input id="task-name" type="text" placeholder="Task Name">
+            <input id="deadline" type="datetime-local" placeholder="Deadline">
+            <div class="reminder">
+                <label>Reminder before</label>
+                <input id="reminder-minute" type="number" placeholder="Minutes">
+                <label>minutes</label>
+            </div>
+            <button id="add-button">Add</button>
+        </div>
+
+        <div class="task-list">
+            <div class="task-column pending">
+                <h2>Pending</h2>
+                
+    
+
+                <!-- More pending task items can be added here -->
+            </div>
+
+            
+            <div class="task-column on-progress">
+                <h2>On Progress</h2>
+                <!-- On progress task items will be added here -->
+                
+            </div>
+            <div class="task-column complete">
+                <h2>Complete</h2>
+                <!-- Complete task items will be added here -->
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
